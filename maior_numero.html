@@ -1,0 +1,36 @@
+<meta charset = "UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+		
+		document.write("<br>");
+
+	}
+
+	function escreva(frase) {
+
+		document.write(frase);
+
+	}
+
+	Array.max = function(array) {
+		return Math.max.apply(Math, array);
+	}
+
+
+  	var numero = 1; 
+  	var lista = [];
+
+  	while(numero <= 5) {
+  		var n = parseInt(prompt("Informe um numero " ));
+  		lista.push(n);
+  		numero++;
+  	}
+
+  	var maior = Math.max(lista)
+
+  	escreva(Array.max(lista))
+
+
+</script>
